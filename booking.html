@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+    <style>
+        /* Basic Page Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image:url('home page image/2.jpg') ;
+}
+ header {
+  background: #008080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+        /* Container for Booking Box */
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            height:400px;
+            margin-top:80px;
+            margin-left: 500px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            color: #008080;
+            font-size: 40px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #008080;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #006666;
+        }
+
+        /* Popup Styles */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+            width: 300px;
+            display: none; /* Hidden by default */
+        }
+
+        .popup h3 {
+            margin: 0 0 10px;
+            color: #008080;
+        }
+
+        .popup button {
+            background-color: #008080;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .popup button:hover {
+            background-color: #006666;
+        }
+
+        /* Overlay to darken background */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo" >Dream Travel Agency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="Hotel_Booking.html">Hotels</a></li>
+
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Booking Form -->
+    <div class="container">
+        <h2>Book Your Trip</h2>
+        <label for="destination"><b>Destination:</b></label>
+        <select id="destination" required>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="London">London</option>
+            <option value="Paris">Paris</option>
+            <option value="Newyork">Newyork</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Mussoorie">Mussoorie</option>
+            <option value="Manali">Manali</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Switzerland">Switzerland</option>    
+        </select>
+
+        <label for="date"><b>Date:</b></label>
+        <input type="date" id="date" required>
+
+        <button onclick="showPopup()">Book Now</button>
+    </div>
+
+    <!-- Custom Popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3>🎉 Booking Confirmed!</h3>
+        <p>You have successfully booked the tickets.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- JavaScript for Popup -->
+    <script>
+        function showPopup() {
+            // Display the popup and overlay
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            // Hide the popup and overlay
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

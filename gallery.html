@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background: #008080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+        #gallery {
+  background-color: #f0f8ff;
+  padding: 2rem 1rem;
+}
+
+#gallery h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 1.5rem;
+  font-size: 44px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.gallery img {
+  width: 400px;
+  height:300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+    /* Style for the Explore button */
+    .explore-button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color:white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    /* Hover effect for the button */
+    .explore-button:hover {
+      background-color: #0056b3;
+    }
+    .box{
+      font-size: 28px;
+      text-align: center; 
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo" >Dream Travel Agency</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="Hotel_Booking.html">Hotels</a></li>
+
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+
+          <div class="box">
+            <img src="London/london1.jpg" alt="London">
+            <div style="margin-top: 25px;"><b>LONDON</b></div>
+            <button class="explore-button"><a href="london.html">Explore</a></button>
+          </div>
+
+        <div class="box">
+          <img src="Singapore/singapore.webp" alt="Singapore">
+          <div style="margin-top: 25px;"><b>SINGAPORE</b></div>
+          <button class="explore-button"><a href="singapore.html">Explore</a></button>
+        </div>
+        
+        <div class="box">
+          <img src="Bangkok/bangkok.webp" alt="Bangkok">
+          <div style="margin-top: 25px;"><b>BANGKOK</b></div>
+          <button class="explore-button"><a href="bangkok.html">Explore</a></button>
+        </div>
+          <div class="box">
+            <img src="new york/newyork.webp" alt="New York">
+            <div style="margin-top: 25px;"><b>NEW YORK</b></div>
+            <button class="explore-button"><a href="newyork.html">Explore</a></button>
+          </div>
+  
+        <div class="box">
+          <img src="Manali/attr_8213_20190326101857.jpg" alt="Manali">
+          <div style="margin-top: 25px;"><b>MANALI</b></div>
+          <button class="explore-button"><a href="manali.html">Explore</a></button>
+        </div>
+
+        <div class="box">
+          <img src="Maldives/maldives.webp" alt="Maldives">
+          <div style="margin-top: 25px;"><b>MALDIVES</b></div>
+          <button class="explore-button"><a href="maldives.html">Explore</a></button>
+        </div>
+
+  <div class="box">
+          <img src="Paris/paris.webp" alt="Paris">
+          <div style="margin-top: 25px;"><b>PARIS</b></div>
+          <button class="explore-button"><a href="paris.html">Explore</a></button>
+        </div> 
+
+        <div class="box">
+          <img src="Switzerland/switzerland.webp" alt="Switzerland">
+          <div style="margin-top: 25px;"><b>SWITZERLAND</b></div>
+          <button class="explore-button"><a href="switzerland.html">Explore</a></button>
+        </div>
+        <div class="box">
+          <img src="Jaipur/jaipur.webp" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>JAIPUR</b></div>
+          <button class="explore-button"><a href="jaipur.html">Explore</a></button>
+        </div>
+        
+        <div class="box">
+          <img src="Mussoorie/mussoorie.jpg" alt="Mussoorie">
+          <div style="margin-top: 25px;"><b>MUSSOORIE</b></div>
+          <button class="explore-button"><a href="mussoorie.html">Explore</a></button>
+          </div>
+
+      </div>
+      </section>  
+</body>
+</html>

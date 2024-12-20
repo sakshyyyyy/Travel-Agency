@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Travel Agency</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#gallery h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 1.5rem;
+  font-size: 44px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.gallery img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.explore-button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color:white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    /* Hover effect for the button */
+    .explore-button:hover {
+      background-color: #0056b3;
+    }
+    .box{
+      font-size: 28px;
+      text-align: center; 
+      width:29%;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    p{
+      font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <section id="gallery">
+        <div class="gallery">
+          <div class="box">
+          <img src="London/St. paul's cathedral.jpg" alt="London">
+          <div style="margin-top: 25px;"><b>ST. PAUL'S CATHEDRAL</b></div>
+          <p>St Paul's Cathedral is the most famous and iconic cathedral in London. It has been used as a backdrop for many major events throughout history, including the wedding of King Charles III to Lady Diana Spencer and Winston Churchill's funeral.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="London/Sea life london aquarium.jpg" alt="London">
+          <div style="margin-top: 25px;"><b>SEA LIFE LONDON AQUARIUM</b></div>
+          <p>The SEA LIFE London Aquarium is a popular marine attraction on London's South Bank, featuring over 500 species, themed zones like Shark Walk and Penguin Point, and interactive exhibits. It’s family-friendly and focuses on marine conservation.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="London/Bigben.webp" alt="London">
+          <div style="margin-top: 25px;"><b>BIG BEN</b></div>
+          <p>Big Ben is the nickname for the Great Bell inside the Elizabeth Tower at the Palace of Westminster in London. It also refers to the iconic clock and tower, completed in 1859. Known for its accuracy and famous chimes, it symbolizes the UK and is a major tourist attraction.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="London/westminster abbey.webp" alt="London">
+          <div style="margin-top: 25px;"><b>WESTMINSTER ABBEY</b></div>
+          <p>Westminster Abbey is a historic Gothic church in London, known for royal coronations, weddings, funerals, and as the burial site of monarchs and notable figures. It’s a key symbol of British heritage.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="London/victoria and albert museum.jpg" alt="London">
+          <div style="margin-top: 25px;"><b>VICTORIA AND ALBERT MUSEUM</b></div>
+          <p>The Victoria and Albert Museum (V&A) in London is the world's largest museum of decorative arts and design. It houses over 2.3 million objects, including fashion, ceramics, jewelry, furniture, and art, spanning 5,000 years of history. Located in South Kensington, it’s renowned for its diverse and stunning collections.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        </div>
+      </div>
+      </section>
+      
+</body>
+</html>

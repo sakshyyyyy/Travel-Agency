@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        /* .header {
+            background-color: #008080;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        } */
+        header {
+  background: #008080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+        .container {
+            padding: 20px;
+        }
+        .hotel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .hotel-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            margin: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .hotel-card img {
+            width: 100%;
+            height: auto;
+        }
+        .hotel-card h3 {
+            margin: 15px;
+            color: #333;
+        }
+        .hotel-card p {
+            margin: 15px;
+            color: #666;
+        }
+        .hotel-card .rating {
+            margin: 15px;
+            color: #ffa500;
+        }
+        .stars {
+            display: inline-block;
+            color: #ffa500;
+            font-size: 16px;
+        }
+        .hotel-card .book-now {
+            display: block;
+            margin: 15px;
+            padding: 10px;
+            background-color: #008080;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hotel-card .book-now:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <div class="logo" >Dream Travel Agency</div>
+        
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="Hotel_Booking.html">Hotels</a></li>
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+           
+          </ul>
+        </nav>
+      </header>
+      
+ 
+    <div class="container">
+        <h2>Hotel Booking</h2>
+        <div class="hotel">
+            <div class="hotel-card">
+                <img src="home page image/Luxury.jpg" alt="Luxury Hotel">
+                <h3>Luxury Grand Hotel</h3>
+                <p>A premium experience with 5-star amenities and exceptional service.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.9/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Budget.jpg" alt="Budget Hotel">
+                <h3>Budget Inn</h3>
+                <p>Affordable stays with comfortable rooms and essential facilities.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★☆</span> (4.2/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Sunset_beach.jpg" alt="Beach Resort">
+                <h3>Sunset Beach Resort</h3>
+                <p>Relax by the beach with stunning views and relaxing vibes.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.7/5)
+                </div>
+                <a href="booking.html" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Ocean_hotel.jpg" alt="Ocean View Paradise">
+                <h3>Ocean View Paradise</h3>
+                <p> Enjoy breathtaking ocean views with luxurious suites and top-notch services.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★☆</span> (4.6
+                    /5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Mountain_resort.jpg" alt="Mountain Retreat">
+                <h3>Mountain Retreat</h3>
+                <p>Escape to nature with cozy accommodations in the hills.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.8/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Citycentralstay.jpg" alt="City Central Stay">
+                <h3>City Central Stay</h3>
+                <p>Conveniently located in the heart of the city with modern amenities.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★☆</span> (4.5/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Royal_heritage.jpg" alt="Royal Heritage Palace">
+                <h3>Royal Heritage Palace</h3>
+                  <p>Immerse yourself in luxury at this historic palace-turned-hotel with royal charm</p>               
+                   <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.8/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Green_valley.jpg" alt="Green Valley Resort">
+                <h3>Green Valley Resort</h3>
+                <p> Nestled in the countryside, this eco-friendly resort offers serenity and nature-inspired activities.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.7/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+            <div class="hotel-card">
+                <img src="home page image/Tranquil.jpg" alt="Tranquil Lake Resort">
+                <h3>Tranquil Lake Resort</h3>
+<p> Escape to peace by the lakeside with luxurious villas and calming water views.</p>
+                <div class="rating">
+                    Rating: <span class="stars">★★★★★</span> (4.5/5)
+                </div>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

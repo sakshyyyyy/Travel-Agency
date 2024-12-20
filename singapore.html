@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Travel Agency</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#gallery h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 1.5rem;
+  font-size: 44px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.gallery img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.explore-button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color:white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    /* Hover effect for the button */
+    .explore-button:hover {
+      background-color: #0056b3;
+    }
+    .box{
+      font-size: 28px;
+      text-align: center; 
+      width:29%;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    p{
+      font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <section id="gallery">
+        <div class="gallery">
+
+        <div class="box">
+          <img src="Singapore/buddha-tooth-relic-temple and musem.jpg" alt="Singapore">
+          <div style="margin-top: 25px;"><b>BUDDHA TOOTH RELIC TEMPLE AND MUSEUM</b></div>
+           <p>The Buddha Tooth Relic Temple in Singapore's Chinatown is a stunning temple housing a sacred Buddha tooth relic. It showcases Buddhist art and culture, attracting worshippers and visitors alike.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        
+        <div class="box">
+          <img src="Singapore/Sentosa.jpg" alt="Singapore">
+          <div style="margin-top: 25px;"><b>SENTOSA</b></div>
+          <p>Sentosa is a vibrant island resort in Singapore, famous for attractions like Universal Studios, S.E.A. Aquarium, and beautiful beaches. It's a top destination for entertainment, relaxation, and adventure, offering something for everyone.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Singapore/Universal studios.jpg" alt="Singapore">
+          <div style="margin-top: 25px;"><b>UNIVERSAL STUDIOS</b></div>
+          <p>Universal Studios Singapore is a world-class theme park on Sentosa Island, featuring thrilling rides, shows, and attractions based on popular movies. It’s a must-visit destination for family fun and adventure.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Singapore/Night safari.jpeg" alt="Singapore">
+          <div style="margin-top: 25px;"><b>NIGHT SAFARI</b></div>
+          <p>Singapore's Night Safari is the world's first nocturnal wildlife park, offering unique nighttime animal encounters. Visitors can explore via tram rides or walking trails to see over 100 species in their natural habitats.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Singapore/merlion park.jpeg" alt="Singapore">
+          <div style="margin-top: 25px;"><b>MERLION PARK</b></div>
+          <p>Merlion Park in Singapore is home to the iconic Merlion statue, a symbol of the city featuring a lion's head and a fish's body. Located near Marina Bay, it offers stunning views and is a popular spot for visitors.</p>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        </div>
+      </div>
+      </section>
+      
+</body>
+</html>

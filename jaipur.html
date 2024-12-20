@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Travel Agency</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#gallery h2 {
+  text-align: center;
+  color: #008080;
+  margin-bottom: 1.5rem;
+  font-size: 44px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.gallery img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.explore-button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color:white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    /* Hover effect for the button */
+    .explore-button:hover {
+      background-color: #0056b3;
+    }
+    .box{
+      font-size: 28px;
+      text-align: center; 
+      width:29%;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    p{
+      font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <section id="gallery">
+        <div class="gallery">
+          <div class="box">
+          <img src="Jaipur/hawamahal.webp" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>HAWA MAHAL</b></div>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Jaipur/jal-mahal-jaipur-tour.jpg" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>JAI MAHAL</b></div>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Jaipur/jantarmantar.jpeg" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>JANTAR MANTAR</b></div>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Jaipur/mukeshartgallery.jpg" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>MUKESH ART GALLERY</b></div>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        <div class="box">
+          <img src="Jaipur/sheeshmahal.jpg" alt="Jaipur">
+          <div style="margin-top: 25px;"><b>SHEESH MAHAL</b></div>
+          <button class="explore-button"><a href="booking.html">Book the trip</a></button>
+        </div>
+        </div>
+      </div>
+      </section>
+      
+</body>
+</html>
